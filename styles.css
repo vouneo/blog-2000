@@ -1,0 +1,100 @@
+:root {
+  /* Tema por defecto: Retro 2000 */
+  --bg-color: #111;
+  --bg-alt: #1b1b1b;
+  --text-color: #00ffcc;
+  --border-color: #00ffcc;
+  --link-color: #00ffcc;
+  --link-hover: #66ffe0;
+  --accent: #ff00ff;
+}
+
+/* Tema Synthwave */
+.theme-synthwave {
+  --bg-color: #1a1a2e;
+  --bg-alt: #16213e;
+  --text-color: #f8f8f2;
+  --border-color: #ff79c6;
+  --link-color: #bd93f9;
+  --link-hover: #ff79c6;
+  --accent: #50fa7b;
+}
+
+/* Tema Hacker Neón */
+.theme-hacker {
+  --bg-color: #000;
+  --bg-alt: #0a0a0a;
+  --text-color: #00ff00;
+  --border-color: #00cc00;
+  --link-color: #00ff88;
+  --link-hover: #88ffcc;
+  --accent: #ff0080;
+}
+
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: "Courier New", monospace;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+header {
+  background: linear-gradient(to bottom, var(--bg-alt), var(--bg-color));
+  border-bottom: 3px solid var(--border-color);
+  padding: 15px;
+}
+
+nav a {
+  color: var(--link-color);
+  text-decoration: none;
+  margin: 0 8px;
+}
+nav a:hover {
+  text-decoration: underline;
+  color: var(--link-hover);
+}
+
+main {
+  width: 80%;
+  margin: 20px auto;
+  text-align: left;
+  background: var(--bg-alt);
+  padding: 20px;
+  border: 2px dashed var(--border-color);
+}
+
+.post h2 {
+  color: var(--accent);
+}
+.post {
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid var(--border-color);
+}
+
+.theme-switcher {
+  margin-top: 10px;
+}
+
+.theme-switcher button {
+  background: var(--bg-alt);
+  color: var(--text-color);
+  border: 1px solid var(--border-color);
+  padding: 5px 10px;
+  margin: 0 5px;
+  font-family: inherit;
+  cursor: pointer;
+}
+
+.theme-switcher button:hover {
+  background: var(--border-color);
+  color: var(--bg-color);
+}
+img.logo {
+  width: 100px;
+  height: auto;
+  margin-bottom: 10px;
+}
