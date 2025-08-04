@@ -2,35 +2,36 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Mi Blog Retro</title>
+  <title>vouneo's blog</title>
+<link
+  rel="icon"
+  href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🕳️</text></svg>"
+/>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <header>
     <img src="img/gif.gif" alt="Logo del blog" class="logo">
-    <h1>Mi Blog Retro</h1>
+    <h1>vouneo's blog</h1>
     <nav>
-      <a href="#">Inicio</a> | 
-      <a href="#">Sobre mí</a> | 
-      <a href="#">Contacto</a>
+      <a href="index.html">Inicio</a>
     </nav>
     <div class="theme-switcher">
-    <button onclick="setTheme('')">Retro 2000</button>
-    <button onclick="setTheme('theme-synthwave')">Synthwave</button>
-    <button onclick="setTheme('theme-hacker')">Hacker Neón</button>
-  </div>
+      <button onclick="setTheme('')">Retro 2000</button>
+      <button onclick="setTheme('theme-synthwave')">Synthwave</button>
+      <button onclick="setTheme('theme-hacker')">neonHack</button>
+    </div>
   </header>
 
-  <main>
-    <section id="posts">
-      <!-- Aquí se cargarán los posts -->
-    </section>
+  <main id="post-list" class="cards-container">
+    <!-- Las tarjetas de posts se generan dinámicamente -->
   </main>
 
   <footer>
-    <p>© 2000-2025 Mi Blog Retro - Mejor visto en Netscape 4.7</p>
+    <p>© 2000-2025 vouneo</p>
   </footer>
 
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
   <script src="script.js"></script>
 </body>
 </html>

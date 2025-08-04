@@ -1,0 +1,16 @@
+[
+  {
+    "slug": "post1",
+    "title": "Bienvenido a mi blog retro",
+    "date": "2025-08-01",
+    "thumbnail": "img/thumbnails/post1.jpg",
+    "file": "posts/post1.md"
+  },
+  {
+    "slug": "post2",
+    "title": "Segundo post retro",
+    "date": "2025-08-02",
+    "thumbnail": "img/thumbnails/post2.jpg",
+    "file": "posts/post2.md"
+  }
+]
